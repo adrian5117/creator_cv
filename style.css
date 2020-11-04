@@ -1,0 +1,899 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    width: 21cm;
+    height: 29.7cm;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(246, 246, 246);
+
+}
+
+.naglowek {
+
+    width: 10cm;
+    height: 300px;
+    /* background-image: url("tlo.png") */
+    background-color: #0c0d16;
+    /* overflow: hidden; */
+    z-index: -2;
+
+}
+
+img {
+    position: absolute;
+}
+
+h4,
+h2 {
+    position: absolute;
+}
+
+.przywitanie {
+    position: absolute;
+    right: 11cm;
+    height: 400px;
+    width: 600px;
+    top: 100px;
+    font-size: 35px;
+}
+
+.pdf a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pdf {
+    position: absolute;
+    right: 1cm;
+    text-decoration: none;
+    padding: 20px 5px;
+    background-color: #2e3144;
+    border-radius: 8px;
+    width: 100px;
+    transition: background-color .3s;
+
+}
+
+.pdf:hover {
+    background-color: #0c0d16;
+}
+
+.edit_date:hover {
+    background-color: #0c0d16;
+}
+
+.buttons {
+    display: none;
+    position: absolute;
+    right: 24cm;
+
+
+
+}
+
+.edit_date {
+    position: absolute;
+    right: 3.6cm;
+    text-decoration: none;
+    padding: 20px 5px;
+    background-color: #2e3144;
+    border-radius: 8px;
+    width: 200px;
+    transition: background-color .3s;
+}
+
+.edit_date a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.edit_education {
+    position: absolute;
+    display: block;
+    /* margin: 10px auto; */
+    padding: 20px 5px;
+    width: 400px;
+    font-weight: 24;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #2970db;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+    top: 350px;
+
+
+}
+
+.edit_education:hover,
+.edit_experience:hover,
+.edit_skills:hover,
+.edit_interests:hover {
+    background-color: #4884dd;
+}
+
+.edit_experience {
+    position: absolute;
+    display: block;
+    /* margin: 10px auto; */
+    padding: 20px 5px;
+    width: 400px;
+    font-weight: 24;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #2970db;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+    top: 550px;
+}
+
+.edit_skills {
+    position: absolute;
+    display: block;
+    /* margin: 10px auto; */
+    padding: 20px 5px;
+    width: 400px;
+    font-weight: 24;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #2970db;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+    top: 750px;
+}
+
+.edit_interests {
+    position: absolute;
+    display: block;
+    /* margin: 10px auto; */
+    padding: 20px 5px;
+    width: 400px;
+    font-weight: 24;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #2970db;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+    top: 950px;
+}
+
+.animation_buttons {
+    animation: animation_butt 2s;
+}
+
+.zdjecie {
+    display: block;
+    width: 100px;
+    height: 150px;
+    left: 30px;
+    top: 60px;
+    border: 2px solid #fff
+}
+
+
+.tlo {
+    display: block;
+    width: 11cm;
+    height: 300px;
+    left: 10cm;
+    top: 0;
+
+
+
+}
+
+.imie_nazwisko {
+    position: absolute;
+    display: block;
+    color: #5599fe;
+    left: 150px;
+    top: 20px;
+    font-size: 25px;
+}
+
+.koperta {
+    display: block;
+    left: 150px;
+    top: 80px;
+    width: 30px;
+}
+
+.email {
+    display: block;
+    color: white;
+    top: 80px;
+    left: 190px;
+    font-size: 14px;
+}
+
+.tel {
+    display: block;
+    left: 154px;
+    top: 120px;
+    /* width:2%; */
+    height: 20px;
+}
+
+.telefon {
+    display: block;
+    color: white;
+    top: 120px;
+    left: 190px;
+    font-size: 14px;
+}
+
+.tort {
+    display: block;
+    left: 154px;
+    top: 158px;
+    /* width:2%; */
+    height: 20px;
+}
+
+.urodziny {
+    display: block;
+    color: white;
+    top: 158px;
+    left: 190px;
+    font-size: 14px;
+}
+
+.lokalizator {
+    display: block;
+    left: 154px;
+    top: 200px;
+    /* width:2%; */
+    height: 20px;
+
+}
+
+.lokalizacja {
+    display: block;
+    color: white;
+    top: 200px;
+    left: 190px;
+    font-size: 14px;
+}
+
+.git {
+    display: block;
+    left: 154px;
+    top: 240px;
+    /* width:2%; */
+    height: 20px;
+}
+
+.git_adres {
+    display: block;
+    color: white;
+    top: 240px;
+    left: 190px;
+    font-size: 14px;
+}
+
+.adres_www {
+    position: absolute;
+    display: block;
+    left: 17cm;
+    color: white;
+    top: 140px;
+    font-size: 17px;
+}
+
+
+.info_wyksztalcenie {
+
+
+    width: 21cm;
+    height: 29.7cm;
+
+
+}
+
+
+.napis_Wyksztalcenie {
+    position: absolute;
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    left: 30px;
+}
+
+.nauka {
+    position: relative;
+    display: block;
+    top: 60px;
+    left: 40px;
+}
+
+.szkola_1_data {
+    position: relative;
+    display: block;
+    top: -100px;
+    left: 200px;
+    width: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.szkola_1_dane {
+    position: relative;
+    display: block;
+    top: -100px;
+    left: 250px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.szkola_1_rodzaj {
+    position: relative;
+    display: block;
+    top: -100px;
+    left: 290px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.szkola_2_data {
+    position: relative;
+    display: block;
+    top: -90px;
+    left: 200px;
+    width: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.szkola_2_dane {
+    position: relative;
+    display: block;
+    top: -90px;
+    left: 250px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.szkola_2_rodzaj {
+    position: relative;
+    display: block;
+    top: -90px;
+    left: 290px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.szkola_3_data {
+    position: relative;
+    display: block;
+    top: -80px;
+    left: 200px;
+    width: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.szkola_3_dane {
+    position: relative;
+    display: block;
+    top: -80px;
+    left: 250px;
+    width: 400px;
+    font-size: 14px;
+}
+
+.szkola_3_rodzaj {
+    position: relative;
+    display: block;
+    top: -80px;
+    left: 290px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.linia_1 {
+    position: relative;
+    display: block;
+    color: #5599fe;
+    width: 100%;
+    height: 4px;
+    background-color: #5599fe;
+    top: -70px;
+}
+
+
+.info_praca {
+
+
+    width: 21cm;
+    height: 29.7cm;
+
+
+}
+
+.napis_doswiadczenie {
+    position: absolute;
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    left: 30px;
+    top: 520px;
+}
+
+.praca {
+    position: relative;
+    display: block;
+    top: -850px;
+    left: 40px;
+}
+
+.praca_1_data {
+    position: relative;
+    display: block;
+    top: -1000px;
+    left: 200px;
+    width: 110px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.praca_1_dane {
+    position: relative;
+    display: block;
+    top: -1000px;
+    left: 250px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.praca_1_rodzaj {
+    position: relative;
+    display: block;
+    top: -1000px;
+    left: 290px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.praca_2_data {
+    position: relative;
+    display: block;
+    top: -1000px;
+    left: 200px;
+    width: 110px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.praca_2_dane {
+    position: relative;
+    display: block;
+    top: -1000px;
+    left: 250px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.praca_2_rodzaj {
+    position: relative;
+    display: block;
+    top: -1000px;
+    left: 290px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.linia_2 {
+    position: relative;
+    display: block;
+    color: #5599fe;
+    width: 100%;
+    height: 4px;
+    background-color: #5599fe;
+    top: -950px;
+}
+
+/*--------------------------*/
+
+.info_umiejetnosci {
+
+
+    width: 21cm;
+    height: 29.7cm;
+
+
+}
+
+.napis_umiejetnosci {
+    position: absolute;
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    left: 30px;
+    top: 700px;
+}
+
+.zembatka {
+    position: relative;
+    display: block;
+    top: -1800px;
+    left: 40px;
+}
+
+.umiejetnosci_ {
+    position: relative;
+    display: block;
+    top: -1940px;
+    left: 200px;
+    width: 500px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+
+
+.linia_3 {
+    position: relative;
+    display: block;
+    color: #5599fe;
+    width: 100%;
+    height: 4px;
+    background-color: #5599fe;
+    top: -1930px;
+}
+
+/*--------------------------*/
+
+.info_zainteresowania {
+
+
+
+    width: 21cm;
+    height: 29.7cm;
+
+
+}
+
+.napis_zainteresowania {
+    position: absolute;
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    left: 30px;
+    top: 870px;
+}
+
+.umiejetnosci {
+    position: relative;
+    display: block;
+    top: -2750px;
+    left: 40px;
+}
+
+.zainteresowania_ {
+    position: relative;
+    display: block;
+    top: -2890px;
+    left: 200px;
+    width: 500px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+
+
+
+.info_zgoda {
+    width: 21cm;
+    height: 29.7cm;
+    position: relative;
+
+}
+
+/* .zgoda_ {
+    
+    display: block;
+    top: -110px;
+    text-align: center;
+    transform: translate(50%,-50%);
+    left: 0;
+    width: 1300px;
+    font-size: 20px;
+    font-weight: normal;
+    opacity: 0.7;
+} */
+
+.zgoda_ {
+    margin: 0;
+    position: absolute;
+    top: -3760px;
+    /* left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); */
+    width: 21cm;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/*--------------Dodanie wartości ------------------*/
+.note-panel .note-panel_2 .save .save_2,
+.note-panel .note-panel_2 .cancel .save_2 {
+    padding: 12px 25px;
+    background: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+.menu button:hover,
+.note-panel .note-panel_2 .save:hover .save_2:hover,
+.note-panel .note-panel_2 .cancel:hover .cancel_2:hover {
+    background-color: #333;
+    color: #ddd;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.note-panel {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 0;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+}
+
+.note-panel_2 {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 0;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+}
+
+.note-panel_3 {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 0;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+}
+
+.note-panel_4 {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 0;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+}
+
+.note-panel_5 {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 0;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+}
+
+.note-panel .note-panel_2 .note-panel_3 .note-panel_4 .note-panel_5 h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.note-panel .note-panel_2 .note-panel_3 .note-panel_4 .note-panel_5 label {
+    margin-bottom: 10px;
+}
+
+.note-panel #text,
+.note-panel #category .note-panel_2 #category_2 .note-panel_2 #text_2 .note-panel_3 #category_3 .note-panel_3 #text_3 .note-panel_4 #text_4 .note-panel_5 #text_5 {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 90%;
+    max-height: 600px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.note-panel .note-panel_2 .note-panel_3 .note-panel_5 .note-panel_5 .error {
+    margin-bottom: 20px;
+    color: red;
+    visibility: hidden;
+}
+
+@keyframes animation_butt {
+    0% {
+        right: 0cm;
+    }
+
+    100% {
+        right: 24cm;
+    }
+}
+
+
+
+@media screen and (max-width:1400px) {
+
+
+    .tlo {
+        /* display: none; */
+    }
+
+    .adres_www {
+        /* display: none; */
+    }
+
+    .przywitanie {
+
+        right: 5cm;
+        height: 400px;
+        width: 400px;
+        top: 100px;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:1472px) {
+
+
+    .tlo {
+        /* display: none; */
+    }
+
+    .adres_www {
+        /* display: none; */
+    }
+
+    .przywitanie {
+
+        right: 18cm;
+        height: 400px;
+        width: 400px;
+        top: 100px;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:1850px) {
+
+
+    .tlo {
+        /* display: none; */
+    }
+
+    .adres_www {
+        /* display: none; */
+    }
+
+    .przywitanie {
+
+        right: 2cm;
+        height: 400px;
+        width: 400px;
+        top: 100px;
+        font-size: 20px;
+
+    }
+
+    .edit_education {
+        width: 250px;
+    }
+
+    .edit_experience {
+        width: 250px;
+    }
+
+    .edit_skills {
+        width: 250px;
+    }
+
+    .edit_interests {
+        width: 250px;
+    }
+
+    .buttons {
+        right: 7cm;
+    }
+
+
+    @keyframes animation_butt {
+        0% {
+            right: 0cm;
+        }
+
+        100% {
+            right: 7cm;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:1200px) {
+
+
+    .tlo {
+        display: none;
+    }
+
+    .adres_www {
+        display: none;
+    }
+
+    .przywitanie {
+
+        right: 1cm;
+        height: 400px;
+        width: 400px;
+        top: 100px;
+        font-size: 20px;
+    }
+
+}
